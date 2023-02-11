@@ -1,0 +1,11 @@
+[Unit]
+Description=Youtube downloader daemon
+
+[Service]
+ExecStart=/srv/yt/yt-v2.sh
+User=yt
+WorkingDirectory=/srv/yt
+
+[Install]
+WantedBy=multi-user.target
+
